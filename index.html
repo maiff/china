@@ -2,9 +2,43 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Tsingwa||青瓦</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="http://common.cnblogs.com/script/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/koala.min.1.5.js"></script>
+<script type="text/javascript">
+function getBrowser()
+{
+if(navigator.userAgent.indexOf("MSIE")>0) { return "MSIE"; }
+if(isFirefox=navigator.userAgent.indexOf("Firefox")>0){ return "Firefox"; }
+if(isSafari=navigator.userAgent.indexOf("Safari")>0) { return "Safari"; } 
+if(isCamino=navigator.userAgent.indexOf("Camino")>0){ return "Camino"; }
+if(isMozilla=navigator.userAgent.indexOf("Gecko/")>0){ return "Gecko"; } 
+}
+var a=getBrowser();
+
+if(a=="Safari"){alert("不好意思~由于初学此网页在非webkit内核兼容最好")}
+
+Qfast.add('widgets', { path: "js/terminator2.2.min.js", type: "js", requires: ['fx'] });  
+Qfast(false, 'widgets', function () {
+	K.tabs({
+		id: 'decoroll2',//焦点图包裹id  
+		conId: "decoimg_a2",//大图域包裹id  
+		tabId:"deconum2",//小圆点数字提示id
+		tabTn:"a",
+		conCn: '.decoimg_b2',//大图域配置class       
+		auto: 1,//自动播放 1或0
+		effect: 'fade',//效果配置
+		eType: 'mouseover',// 鼠标事件
+		pageBt:true,//是否有按钮切换页码
+		bns: ['.prev', '.next'],//前后按钮配置class                          
+		interval: 3000// 停顿时间  
+	}) 
+}) 
+</script>
 </head>
 <body>
 	<div class="nav">
@@ -22,10 +56,27 @@
 		</div>
 	</div>
 	<div class="main">
-		<dvi class="slide">
-			<div class="slide1"><img width="100%" height="500px" src="src/slide1.png"></div>	
+		
+<!-- begin-->
+		<div class="slide">
+	<div id="decoroll2" class="imgfocus">
+	<div id="decoimg_a2" class="imgbox">
+		<div class="decoimg_b2"><a href="#"><img src="src/slide1.png" ></a></div>
+		<div class="decoimg_b2"><a href="#"><img src="src/slide2.png" ></a></div>
+		<div class="decoimg_b2" ><a href="#"><img src="src/slide3.png" ></a></div>
+		<div class="decoimg_b2"><a href="#"><img src="src/slide2.png" ></a></div>
+	</div>
+	
+	<ul id="deconum2" class="num_a2">
+		<li><a href="javascript:void(0)" hidefocus="true" target="_self"></a></li>
+		<li><a href="javascript:void(0)" hidefocus="true" target="_self"></a></li>
+		<li><a href="javascript:void(0)" hidefocus="true" target="_self"></a></li>
+		<li><a href="javascript:void(0)" hidefocus="true" target="_self"></a></li>
+	</ul>
+	
+</div>	
 		</div>
-
+<!--end-->
 		<div class="about">
 			<div class="background-img"><img height="300px" width="100%" src="http://www.tsingwa.com/images/banner.jpg">
 			</div>
@@ -33,11 +84,64 @@
 				<div class="content">
 					<h3>我们是谁</h3>
 				<p>我们的品牌为什么叫“青瓦”？ 青在《汉字宫》中是用来组字</p><p>的意音字，上面的荧表示读音，下面的月表示月亮······</p>
+				<a class="a-more" href="">More</a>
 				</div>
 			</div>
 		</div>
+		
+		<div class="news">
+			<div id="large"><div class="n-word">
+				<p class="n-p"><a class="n-hover" target="_blank" href="http://mp.weixin.qq.com/s?__biz=MjM5NzE2NzUzMA==&mid=202323881&idx=1&sn=941b03dc0711106b9471791291b445d9&scene=4#wechat_redirect">清风明月伴白云丨毕立伟</a></p>
+				<p class="n-p"><a class="n-hover" target="_blank" href="http://mp.weixin.qq.com/s?__biz=MjM5NzE2NzUzMA==&mid=202155640&idx=1&sn=3e1d1b9894797c5c2eb1552aa9e096ef&scene=4#wechat_redirect">我们的时代，是一个充满了不确定的流动的时代</a></p>
+				<p class="n-p"><a class="n-hover" target="_blank" href="http://mp.weixin.qq.com/s?__biz=MjM5NzE2NzUzMA==&mid=200230382&idx=1&sn=b5d3213f86e5be595064127b3ba93a21&scene=4#wechat_redirect">青瓦 ▎ 手作--时间、身体与精神的倾注</a></p>
+				<p class="n-p"><a class="n-hover" target="_blank" href="http://mp.weixin.qq.com/s?__biz=MzA4NjEyOTc2MA==&mid=202574142&idx=1&sn=0e10d8ff31753ff96f41e465defc1d2d&scene=4#wechat_redirect">探访磁州窑行纪</a></p>
+				<p class="n-p"><a class="n-hover" target="_blank" href="http://mp.weixin.qq.com/s?__biz=MjM5NzE2NzUzMA==&mid=201958252&idx=1&sn=69e3f9884bbd9aa35525f45ed4e402de&scene=4#wechat_redirect">青瓦丨把初心印在画上</a></p>
+			</div>
+			</div>
+			<div class="n-img"><img height="300px" width="100%" src="src/news.jpg">
+			</div>
+			<a class="n-more n-hover" href="">More</a>
 		</div>
-	<div class="footer"></div>
-	
+			
+		<div class="goods">
+		<a href="#" class="demo">
+		<div class="img" style="background-image:url(src/goods.jpg)"></div>
+		<div class="mask">
+			<div class="info">
+				<h3><strong>样品展示</strong></h3>
+				<p>Description goes here</p>
+			</div>
+		</div>
+		<div class="border"></div>
+	</a>
+		</div>
+
+</div>
+	<div class="footer">© Copyright 2014-2015 <a href="http://www.cnblogs.com/growlove/" target="_blank">maiff</a></div>
+
+
+<div id="goTopBtn"><div class="bg"></div></div>
+
+<script type="text/javascript">
+$(document).ready(
+  $("div.blogStats").append("<a href='https://github.com/maiff' target=_blank title='MyGithub'style='display:block;visibility:visible;width:60px;height:60px;'></a>")
+);
+
+
+  $(window).scroll(function(){
+     var sc=$(window).scrollTop();
+     var rwidth=$(window).width()
+         if(sc>0){
+    $("#goTopBtn").css("display","block");
+    $("#goTopBtn").css("left",(rwidth-36)+"px")
+    }else{
+   $("#goTopBtn").css("display","none");
+    }
+    })
+   $("#goTopBtn").click(function(){
+    var sc=$(window).scrollTop();
+   $('body,html').animate({scrollTop:0},500);
+    })  
+</script>
 </body>
 </html>

@@ -12,6 +12,7 @@ a{
 	height: 40px;
 	position: fixed;
 	top:0;
+	z-index: 999999;
 }
 .href{
 	float: right;
@@ -24,7 +25,7 @@ a{
 	transition: all 0.5s ease 0s;
 }
 
-.nav-href:hover{
+.nav-href:hover,.a-more:hover{
 	color: #FFFF00;
 
 }
@@ -75,4 +76,160 @@ hr{
 
 .content{
 	margin:80px;
+}
+
+.a-more{
+	color:#fff;
+	position: relative;
+	left: 600px;
+	transition: all 0.5s ease 0s;
+}
+
+.news{
+	width: 100%;
+	height: 300px;
+	background: #f7f7f7;
+	clear:both;
+	margin-top:-10px;
+	position: relative;
+	top: -5px;
+
+}
+
+.n-p>a{
+	
+	color: #000;
+}
+
+.n-word{
+	position: relative;
+	left: 100px;
+	top: 30px;
+	
+}
+#large{
+	width: 65%;
+	height: 300px;
+	float: left;
+}
+.n-img{
+	width: 35%;
+	float: left;
+}
+.n-more{
+	color: #000;
+	position: relative;
+	bottom: 50px;
+	left: 700px;
+}
+.n-hover:hover,.footer>a:hover{
+	color: #ff6600;
+}
+
+
+/*样品展示*/
+.demo,.img,.border,.mask{
+			width: 300px;
+			height: 300px;
+		}
+		.demo{
+			display: block;
+			position: relative;
+			margin:50px auto;
+		}
+		.img{
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+			border-radius: 50%;
+		}
+		.border{
+			position: absolute;
+			border: 10px solid #CD661D;
+			border-left-color:#E07514;
+			border-top-color:#CD661D;
+			border-radius: 50%;
+			top: 0;
+			left: 0;			
+			transition:all .5s ease-in;
+			box-sizing:border-box;
+		}
+		.mask{
+			position: absolute;
+			top: 0;
+			left: 0;
+			border-radius: 50%;
+			transition:all .5s ease-in;
+			color:rgba(255,255,255,0);
+		}
+		.demo:hover .mask{
+			background-color:rgba(0,0,0,0.5);
+			color:rgba(255,255,255,1);
+		}
+		.demo:hover .border{
+			transform:rotate(180deg);
+
+		}
+		.info{
+			position: absolute;
+			width: 100%;
+			top: 50%;
+			left: 0;
+			text-align: center;
+			transform:translateY(-50%);
+		}
+
+	/*end*/
+
+.good{
+	width: 100%;
+	height: 300px;
+}
+
+.footer{
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	height:50px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+}
+
+.footer>a{
+	color: #fff;
+}
+
+
+/*top*/
+.blackTop{
+	position: fixed;
+	bottom:0;
+	right: 0;
+	transition:all 0.5s;
+}
+
+#goTopBtn {
+	position: fixed;
+	line-height:36px;
+	width:36px;
+	bottom:35px;
+	height:36px;
+	cursor:pointer;
+	display:none;
+	background:#ccc;
+}
+.top{
+	color: black;
+	text-align: center;margin-top: -36px;
+	
+}
+
+.bg{
+	background: url("http://www.iconpng.com/png/ios7-set-filled-2/arrow187.png") no-repeat;
+	widows: 36px;
+	height: 36px;
+	background-size:30px 30px;
+	background-position: center;  
 }
