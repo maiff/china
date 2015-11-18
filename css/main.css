@@ -176,7 +176,7 @@ hr{
 		.info{
 			position: absolute;
 			width: 100%;
-			top: 50%;
+			top: 300px;
 			left: 0;
 			text-align: center;
 			transform:translateY(-50%);
