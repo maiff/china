@@ -114,6 +114,7 @@ hr{
 	width: 65%;
 	height: 300px;
 	float: left;
+	background: #f7f7f7;
 }
 .n-img{
 	width: 35%;
@@ -176,7 +177,7 @@ hr{
 		.info{
 			position: absolute;
 			width: 100%;
-			top: 300px;
+			top: 50%;
 			left: 0;
 			text-align: center;
 			transform:translateY(-50%);
@@ -250,8 +251,11 @@ hr{
 }
 
 
-.info{
-	margin-top: -30px;
+.info2{
+	position: absolute;
+			width: 100%;
+			top: 30%;
+	text-align: center;
 }
 
 .form{
