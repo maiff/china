@@ -254,7 +254,7 @@ hr{
 .info2{
 	position: absolute;
 			width: 100%;
-			top: 30%;
+			top: 10%;
 	text-align: center;
 }
 
@@ -330,10 +330,15 @@ form>div{
 
 }
 .all{
-	width: 1300px;
+
+	background: #ccc;
 }
 
 .xushu>a{
 	padding: 6px;
 	
+}
+
+.test{
+	clear:both;
 }
